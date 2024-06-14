@@ -13,6 +13,8 @@ gem "sidekiq"
 
 gem "kramdown"
 
+gem 'kramdown-parser-gfm'
+
 gem 'turbolinks', '~> 5'
 
 gem 'coffee-rails', '~> 5.0'
