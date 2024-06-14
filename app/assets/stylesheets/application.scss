@@ -13,4 +13,14 @@
  *= require_tree .
  *= require_self
  */
- @import 'bootstrap';
+@import "bulma";
+@import "functions";
+@import "direct_uploads";
+
+.notification {
+  border-radius: 0;
+}
+
+.notification:not(:last-child) {
+  margin-bottom: 0;
+}

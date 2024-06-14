@@ -347,5 +347,16 @@
   .nudge-up-9          { position: relative; bottom: 9px; }
   .nudge-up-10         { position: relative; bottom: 10px; }
   
+  .navbar {
+    background-color: rgb(0, 4, 255);
+  }
   
-  
+  .navbar-item {
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar-link{
+    text-decoration: none;
+    color: white;
+  }
