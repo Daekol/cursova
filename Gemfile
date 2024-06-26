@@ -11,6 +11,10 @@ gem "bulma-rails"
 
 gem "sidekiq"
 
+gem "image_processing"
+
+gem "ruby-vips"
+
 gem "kramdown"
 
 gem 'kramdown-parser-gfm'

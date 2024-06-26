@@ -21,10 +21,14 @@
   <% end %>
 </section>
 
-<%= form_for [@conversation, @message] do |f| %>
-  <%= f.text_area :body, class: "textarea", placeholder: "Inquire about a trade..." %>
-  <%= f.text_field :user_id, value: current_user.id, type: "hidden"  %>
-  <div class="text-align-right">
-    <%= f.submit "Send message", class: "button is-link is-large mt3" %>
+<%= form_for [@conversation, @message], html: { class: "form" } do |f| %>
+  <div class="form-group">
+    <%= f.text_area :body, class: "form-control", placeholder: "Inquire about a trade..." %>
+  </div>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <div class="text-right">
+    <%= f.submit "Send message", class: "btn btn-primary btn-lg mt-3" %>
   </div>
 <% end %>
+
+
